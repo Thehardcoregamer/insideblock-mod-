@@ -1,0 +1,2 @@
+#!/bin/sh
+GRADLE_OPTS="${GRADLE_OPTS:-}" exec "$(dirname "$0")/gradle/wrapper/gradle-wrapper" "$@"

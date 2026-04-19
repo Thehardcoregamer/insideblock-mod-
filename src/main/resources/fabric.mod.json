@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "insideblock",
+  "version": "1.0.0",
+  "name": "Inside Any Block",
+  "description": "Sneak + right-click any block to enter its pocket dimension! Server-side only — clients need no mod installed.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.insideblock.InsideBlockMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}

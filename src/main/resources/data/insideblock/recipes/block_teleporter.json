@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CDC",
+    "CCC"
+  ],
+  "key": {
+    "C": { "item": "minecraft:cobblestone" },
+    "D": { "item": "minecraft:diamond" }
+  },
+  "result": {
+    "id": "insideblock:block_teleporter",
+    "count": 1
+  }
+}
