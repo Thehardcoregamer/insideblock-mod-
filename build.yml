@@ -1,0 +1,24 @@
+name: Build with Gradle
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download Gradle
+      run: |
+        GRADLE_VERSION=7.4.2 # Specify the version you want
+        wget https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip
+        unzip gradle-$GRADLE_VERSION-bin.zip
+        export PATH=$PATH:`pwd`/gradle-$GRADLE_VERSION/bin
+
+    - name: Run Gradle build
+      run: gradle build
